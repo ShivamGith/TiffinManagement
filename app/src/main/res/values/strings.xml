@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Tiffin Management</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="main_item">Main Item</string>
+    <string name="no_account_register">Don\'t have an account? Register</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="already_have_an_account_login">Already have an account? Login</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="your_last_name">Your Last Name</string>
+    <string name="your_first_name">Your First Name</string>
+    <string name="profile_icon">Profile Icon</string>
+</resources>

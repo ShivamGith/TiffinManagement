@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:src="@drawable/ic_login_register"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/editTextEmail"
+        android:layout_marginBottom="16dp"/>
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:textColorHint="#000000"
+        android:inputType="textEmailAddress"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="8dp"
+        android:textColor="#000000"
+        android:importantForAutofill="no"
+        android:background="@drawable/rounded_corners"
+        android:padding="18dp"/>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:layout_below="@id/editTextEmail"
+        android:layout_centerInParent="true"
+        android:textColorHint="#000000"
+        android:layout_marginBottom="16dp"
+        android:textColor="#000000"
+        android:importantForAutofill="no"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_corners"
+        android:padding="18dp"/>
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/login"
+        android:layout_below="@id/editTextPassword"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_account_register"
+        android:layout_below="@id/buttonLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textColor="#000000"/>
+</RelativeLayout>
