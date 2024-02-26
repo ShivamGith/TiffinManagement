@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@color/cardview_light_background"
+        android:elevation="4dp"
+        android:radius="8dp">
+
+        <!-- Thumbnail Image -->
+        <ImageView
+            android:id="@+id/imageViewThumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder_thumbnail" />
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Tiffin Center Name -->
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/tiffin_center_name"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Cuisines -->
+    <TextView
+        android:id="@+id/textViewCuisines"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/cuisines"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <!-- Rating -->
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:numStars="5"
+        android:rating="4"
+        android:stepSize="0.5" 
+        android:outlineAmbientShadowColor="@color/black"/>
+
+    <!-- Location -->
+    <TextView
+        android:id="@+id/textViewLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Location"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <!-- Menu Button -->
+    <Button
+        android:id="@+id/btnMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/red_dark"
+        android:padding="8dp"
+        android:text="@string/view_menu"
+        android:textColor="@color/white" />
+
+</LinearLayout>

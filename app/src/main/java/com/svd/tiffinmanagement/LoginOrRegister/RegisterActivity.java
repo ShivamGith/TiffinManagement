@@ -20,6 +20,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.svd.tiffinmanagement.R;
 
+import java.util.Random;
+
 import Models.UsersHelperClass;
 
 public class RegisterActivity extends AppCompatActivity {
@@ -94,7 +96,7 @@ public class RegisterActivity extends AppCompatActivity {
                 public void onUserCheck(boolean exists) {
                     if (!exists) {
                         // User does not exist, proceed with user registration
-                        UsersHelperClass user = new UsersHelperClass(firstName, lastName, email, phone, password);
+                        UsersHelperClass user = new UsersHelperClass(firstName, lastName, generateUsername(firstName, lastName) , email, phone, password);
                         addUserToDatabase(user);
                     } else {
                         // User already exists, show error message
@@ -135,7 +137,7 @@ public class RegisterActivity extends AppCompatActivity {
             // Add the user to the database
             databaseReference.child(userId).setValue(user, new DatabaseReference.CompletionListener() {
                 @Override
-                public void onComplete(@NonNull DatabaseError error, @NonNull DatabaseReference ref) {
+                public void onComplete(DatabaseError error, @NonNull DatabaseReference ref) {
                     if (error == null) {
                         showToast("Registration successful. Please Login with same credentials");
                         Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
@@ -170,6 +172,14 @@ public class RegisterActivity extends AppCompatActivity {
 
     private void showToast(String message) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+    }
+    public static String generateUsername(String firstName, String lastName) {
+        Random random = new Random();
+        int randomNumber = random.nextInt(9000) + 1000; // Generate a random 4-digit number
+
+        // Combine the first name, last name, and random number to form the username
+
+        return firstName + "_" + lastName + randomNumber;
     }
 }
 

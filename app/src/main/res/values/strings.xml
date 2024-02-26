@@ -12,4 +12,14 @@
     <string name="your_last_name">Your Last Name</string>
     <string name="your_first_name">Your First Name</string>
     <string name="profile_icon">Profile Icon</string>
+    <string name="username_or_email">UserName/Email</string>
+    <string name="offers">Offers</string>
+    <string name="lunchbox">LunchBox</string>
+    <string name="near_me">Near me</string>
+    <string name="explore">Explore</string>
+    <string name="cart">Cart</string>
+    <string name="account">Account</string>
+    <string name="tiffin_center_name">Tiffin Center Name</string>
+    <string name="view_menu">View Menu</string>
+    <string name="cuisines">Cuisines</string>
 </resources>

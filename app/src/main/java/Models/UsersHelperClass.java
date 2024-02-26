@@ -1,11 +1,12 @@
 package Models;
 
 public class UsersHelperClass {
-    String FirstName, LastName, Email, PhoneNumber, Password;
+    String FirstName, LastName, UserName, Email, PhoneNumber, Password;
 
-    public UsersHelperClass(String firstName, String lastName, String email, String phoneNumber, String password) {
+    public UsersHelperClass(String firstName, String lastName, String userName, String email, String phoneNumber, String password) {
         FirstName = firstName;
         LastName = lastName;
+        UserName = userName;
         Email = email;
         PhoneNumber = phoneNumber;
         Password = password;
@@ -16,6 +17,9 @@ public class UsersHelperClass {
 
     public String getFirstName() {
         return FirstName;
+    }
+    public String getUserName() {
+        return UserName;
     }
 
     public void setFirstName(String firstName) {

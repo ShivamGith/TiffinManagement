@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/nearme"
+        android:title="@string/near_me"
+        android:icon="@drawable/ic_location_on_black_24dp"
+        >
+    </item>
+
+    <item android:id="@+id/explore"
+        android:title="@string/explore"
+        android:icon="@drawable/ic_search"
+        >
+    </item>
+
+    <item android:id="@+id/cart"
+        android:title="@string/cart"
+        android:icon="@drawable/ic_shopping_cart_black_24dp"
+        >
+    </item>
+    <item android:id="@+id/account"
+        android:title="@string/account"
+        android:icon="@drawable/ic_person_black_24dp"
+        >
+    </item>
+</menu>
